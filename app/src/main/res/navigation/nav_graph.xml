@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ProductsFragment">
+    <fragment
+        android:id="@+id/ProductsFragment"
+        android:name="com.applicaton.internshipvk.presentation.ProductsFragment"
+        android:label="Список товаров"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_ProductsFragment_to_InfoFragment"
+            app:destination="@id/InfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/InfoFragment"
+        android:name="com.applicaton.internshipvk.presentation.InfoFragment"
+        android:label="Информация"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_InfoFragment_to_ProductsFragment"
+            app:destination="@id/ProductsFragment" />
+    </fragment>
+</navigation>

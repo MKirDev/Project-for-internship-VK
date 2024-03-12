@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@android:color/black"> <!-- Цвет ripple effect -->
+    <item android:id="@android:id/mask"
+        android:width="10dp"
+        >
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/black" /> <!-- Цвет mask -->
+        </shape>
+    </item>
+</ripple>
